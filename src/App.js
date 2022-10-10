@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <h1>Your Restaurant</h1>
       </header>
-    </div>
+      <section class="section1">
+        <h1>Section w/o parallax effect</h1>
+      </section>
+      <section class="section2">
+        <h1>Section w/ parallax effect</h1>
+      </section>
+    </>
   );
 }
-
-export default App;
